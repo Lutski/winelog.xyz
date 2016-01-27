@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :winelogbooks
+  resources :winelogbooks do
+    resources :wines
+  end
+  
   devise_for :users
   root 'main#index'
 

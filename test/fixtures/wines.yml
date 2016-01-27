@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  vintage: 2016-01-27
+  brand: MyString
+  winelogbook_id: 
+
+two:
+  title: MyString
+  description: MyText
+  vintage: 2016-01-27
+  brand: MyString
+  winelogbook_id: 

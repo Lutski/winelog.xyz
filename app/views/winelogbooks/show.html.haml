@@ -2,4 +2,15 @@
 %p= @winelog.description
 
 = link_to "Edit winelog", edit_winelogbook_path(@winelog)
-= link_to "Delete winelog", winelogbook_path(@winelog), method: :delete
+= link_to "Delete winelog", winelogbook_path(@winelog), method: :delete, data: { confirm: "Are you sure?" }
+
+= render 'wines/form'
+
+-# = render @winelog.wines
+
+- @winelog.wines.each do |wine|
+  -# = link_to wine.title, winelogbook_wine_path(wine.winelogbook, wine)
+  -# = link_to wine.title, [wine.winelogbook, wine]
+  = link_to [wine.winelogbook, wine] do
+    = wine.title
+  %br

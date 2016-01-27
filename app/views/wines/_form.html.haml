@@ -1,0 +1,7 @@
+= form_for([@winelog, @winelog.wines.build]) do |f|
+  = f.text_field :title, placeholder: "Title of the wine"
+  = f.text_field :brand
+  = f.text_area :description, placeholder: "Description of the wine"
+  = f.date_select :vintage, { :discard_day => true, :discard_month => true, :start_year => 1600, end_year: Time.now.year + 1 }
+
+  = f.submit
