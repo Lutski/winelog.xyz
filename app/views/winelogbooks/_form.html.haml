@@ -1,0 +1,9 @@
+= form_for @winelog do |f|
+  = f.text_field :title, placeholder: "Title"
+  %br
+  = f.text_area :description, placeholder: "Description"
+  %br
+  %p Private Winelog (default is false)
+  = f.check_box :isprivate
+  %br
+  = f.submit

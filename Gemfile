@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'devise', '~> 3.5', '>= 3.5.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
