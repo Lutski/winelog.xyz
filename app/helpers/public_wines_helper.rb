@@ -1,0 +1,2 @@
+module PublicWinesHelper
+end

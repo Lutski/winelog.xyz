@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  get 'discover_winelogs' => 'public_wines#discover_winelogs'
+  get 'discover_wines' => 'public_wines#discover_wines'
+
   resources :winelogbooks do
     resources :wines
   end
-  
+
   devise_for :users
   root 'main#index'
 

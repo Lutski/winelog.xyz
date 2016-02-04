@@ -7,3 +7,8 @@
 %p= "Description: #{@wine.description}"
 %p= "Brand: #{@wine.brand}"
 %p= "Vintage: #{@wine.vintage.year}"
+
+
+
+= link_to "Delete", winelogbook_wine_path, method: :delete
+= link_to "Edit", edit_winelogbook_wine_path(@winelog, @wine)

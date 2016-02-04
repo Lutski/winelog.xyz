@@ -1,4 +1,6 @@
-= form_for([@winelog, @winelog.wines.build]) do |f|
+%h1 Edit
+
+= form_for([@winelog, @wine]) do |f|
   = f.text_field :title, placeholder: "Title"
   = f.text_field :brand, placeholder: "Brand"
   = f.text_area :description, placeholder: "Description"
