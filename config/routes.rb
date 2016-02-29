@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :winelogbooks do
     resources :wines
+
+    collection do
+      get :recent
+    end
   end
 
   devise_for :users

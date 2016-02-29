@@ -2,7 +2,12 @@ class WinelogbooksController < ApplicationController
   before_action :find_winelog_params, only: [:show, :edit, :update, :destroy]
 
   def index
-    @winelogs = Winelogbook.all.order("created_at DESC")
+    @winelogs = Winelogbook.all
+  end
+
+  def recent
+    @winelogs = Winelogbook.recent
+    render action: :index
   end
 
   def show
